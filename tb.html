@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startupsindh</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.logo h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 4px;
+    padding-left: 30px;
+}
+.logo img {
+    width: 35px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-top: -3px;
+}
+.background {
+    background: rgba(0, 0, 0, 0.7) url(img/banner.png);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 80px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.rightnav {
+    text-align: right;
+    width: 30%;
+    padding: 0px 23px;
+    margin-top: -7px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 18px 30px;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#search {
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.btn-sm{
+    padding: 8px 20px;
+    margin: 7px 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.img{
+    width: 65%;
+    height: 590px;
+    background-image: url(img/sindhi/mt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 100px;
+    left: 18%;
+}
+.note{
+    width: 60%;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+}
+.note p{
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+}
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 450px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-nav{
+        opacity: 0;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+    }
+    .btn{
+        text-align: center;
+    }
+    .section{
+        height: 1300px;
+    }
+    .img{
+        display: none;
+    }
+    .note{
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-nav">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="logo">
+                <h3>Startup Sindh</h3>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact us</a></li>
+
+        </ul>
+        <div class="rightnav v-nav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="img">
+    </div>
+    <div class="note">
+        <p>Masjid-e-Tooba, also known as the Tooba Mosque or the Gol Masjid, is a famous mosque located in Karachi, Sindh,
+        Pakistan. It is one of the largest single-dome mosques in the world and is known for its unique architectural
+        design.</p>
+        <h3>Here are some key facts about Masjid-e-Tooba:</h3>
+        <p>Location: Masjid-e-Tooba is situated in the area of Defence Housing Authority (DHA) Phase II, Karachi, Pakistan.</p>
+        <p>It is located near Korangi Creek and is easily accessible from various parts of the city.</p>
+        <p>Architectural Design: The mosque was designed by Pakistani architect Dr. Babar Hamid Chauhan in 1969. It is a
+        remarkable example of modern Islamic architecture. The most distinctive feature of the mosque is its large
+        central dome, which has a diameter of 72 meters (236 feet) and is one of the largest domes in the world.
+        Capacity: Masjid-e-Tooba can accommodate up to 5,000 worshippers at a time. The main prayer hall, located under
+        the central dome, is spacious and well-ventilated.</p>
+        <p>Single-Dome Structure: The mosque's single dome is supported by a low surrounding wall instead of traditional
+        pillars. This design allows for an unobstructed view of the prayer hall from any angle within the mosque.
+        Peaceful Environment: Masjid-e-Tooba is known for its serene and peaceful environment. The mosque is surrounded
+        by a spacious courtyard with lush green lawns, providing a tranquil setting for worshippers and visitors.
+        Open for All: The mosque is open to both Muslims and non-Muslims. Visitors are welcome to explore the premises,
+        observe the prayer rituals, and appreciate the architectural beauty of Masjid-e-Tooba.</p>
+        <p>Tourist Attraction: Due to its unique design and architectural significance, Masjid-e-Tooba has become a popular
+        tourist attraction in Karachi. Many local and foreign tourists visit the mosque to experience its grandeur and
+        spirituality.</p>
+    </div>
+
+    <script src="resp.js"></script>
+</body>
+
+</html>
