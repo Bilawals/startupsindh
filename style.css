@@ -4,37 +4,38 @@
 * {
     margin: 0;
     padding: 0;
-
 }
-  html{
-    scroll-behavior: smooth;
-  }
 .logo {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 .logo h3{
     color: white;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
+    padding-top: 4px;
+    padding-left: 30px;
 }
 .logo img {
-    width: 26px;
+    width: 35px;
     border: 3px solid white;
     border-radius: 50px;
-    margin: 5px;
+    margin-top: -3px;
 }
-
+.background {
+    background: rgba(0, 0, 0, 0.7) url(img/banner.png);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 80px;
+}
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    position: sticky;
-    top: 0;
-   
 }
 
 .nav-list {
@@ -47,12 +48,12 @@
     text-align: right;
     width: 30%;
     padding: 0px 23px;
-
+    margin-top: -7px;
 }
 
 .nav-list li {
     list-style: none;
-    padding: 26px 30px;
+    padding: 18px 30px;
 }
 
 .nav-list li a:hover {
@@ -65,7 +66,6 @@
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-
 #search {
     padding: 5px;
     font-size: 15px;
@@ -235,7 +235,7 @@ font-size: 38px;
     .navbar{
         flex-direction: column;
         transition: all 0.7s ease-out;
-        height: 450px;
+        height: 550px;
     }
     .rightnav{
         text-align: center;
@@ -272,7 +272,7 @@ font-size: 38px;
         padding: 0px;
     }
     .section{
-        height: 1300px;
+        height: 1500px;
     }
 }
 

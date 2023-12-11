@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.logo h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 4px;
+    padding-left: 30px;
+}
+.logo img {
+    width: 35px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-top: -3px;
+}
+.background {
+    background: rgba(0, 0, 0, 0.7) url(img/banner.png);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 80px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.rightnav {
+    text-align: right;
+    width: 30%;
+    padding: 0px 23px;
+    margin-top: -7px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 18px 30px;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#search {
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.btn-sm{
+    padding: 8px 20px;
+    margin: 7px 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+} 
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.note p{
+    width: 80%;
+    height: 500px;
+    color: black;
+    position: absolute;
+    left: 10%;
+    font-size: 20px;
+    text-align: justify;
+}
+.teamsetting{
+    margin-top: 90px !important;
+}
+.teamsetting h2{
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+.teamsetting h1{
+    color: black;
+    position: absolute;
+    top: 25%;
+    left: 28%;
+}
+.text-footer{
+    background-color: dimgray;
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 45%;
+}
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 450px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-nav{
+        opacity: 0;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+    }
+    .btn{
+        text-align: center;
+    }
+    .section{
+        height: 1300px;
+    }
+    .text-footer{
+    background-color: dimgray;
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 905%;
+}
+    .teamsetting h1{
+        font-size: 30px;
+        position: absolute;
+        top: 1200%;
+        left: 15%;
+    }
+    .teamsetting h2{
+        position: absolute;
+        top: 1500%;
+        left: 25%;
+    }
+    .teamsetting{
+    margin-top: 120px !important;
+    }
+    .note p{
+    width: 80%;
+    height: 500px;
+    color: black;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    font-size: 20px;
+    text-align: justify;
+    }
+    .img{
+        position: absolute;
+        left: 17%;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-nav">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="logo">
+                <h3>Startup Sindh</h3>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+        <div class="rightnav v-nav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="col-lg-9 col-md-9 col-sm-10 col-12 d-block m-auto teamsetting">
+        <figure class="figure">
+            <img src="img/sindhi/waheed1.jpg" class="figure-img img-fluid rounded-circle img" height="250px"  width="250px">
+            <h1>Muhammad Ilyas Soomro</h1>
+            <h2>CEO Message</h2>
+        </figure>
+    </div>
+    <div class="note">
+        <figcaption>
+            <p class="figure-caption">Dear all,
+                I am thrilled to introduce you to STARTUPSINDH, a platform with a wide array of purposes that aim to make a lasting impact on the youth of Sindh, Pakistan, and their educational and career journeys. Our journey began humbly with just five students, but our aspirations have grown, and we are now immersing these students in the dynamic world of technology.
+                At STARTUPSINDH, our primary mission is to empower the youth of Sindh, Pakistan. We understand the challenges and opportunities that the young minds of our region face, and we are committed to guiding and supporting them throughout their educational and career endeavors.
+                One of our core objectives is to provide guidance. We want to be your compass, helping you navigate the often complex educational and career landscapes. Whether you are a student exploring educational paths, a young professional embarking on a career, or anyone in between, we are here to assist and advise you.
+                In addition to guidance, we are passionate about sharing the rich heritage of Sindh, Pakistan. This cultural and historical treasure trove holds the roots of our identity, and we believe it's essential to celebrate and preserve our cultural heritage. We will bring you engaging content, stories, and insights that shed light on the vibrant tapestry of Sindh's culture.
+                Furthermore, we are committed to keeping you informed about the latest developments in technology and career growth. The world is evolving rapidly, and staying up-to-date with the latest trends and opportunities is crucial for success. We will be your source of information and updates on these fronts.
+                To achieve these goals, we have built a network of experts from around the globe who are eager to share their insights and knowledge with you. These experts come from diverse backgrounds and fields, and they are here to offer guidance, answer your questions, and provide valuable perspectives.
+                Whether you are seeking information on university admissions, exploring different career paths, preparing for job interviews, or simply looking for inspiration, you can count on us to have your back. We have a wealth of resources and connections to help you on your journey.
+                In closing, I encourage you to stay connected with us. We are not just a platform; we are your partners in your pursuit of success. Our commitment is to support and guide you every step of the way. Your dreams and ambitions are important to us, and we are here to help you realize them.
+                Thank you for being a part of the STARTUPSINDH community, and I look forward to the incredible journey ahead.
+                <br>
+                Warm regards,
+                <br>
+                Muhammad Ilyas Soomro
+                Founder, STARTUPSINDH</p>
+        </figcaption>
+    </div>
+    <footer class="background">
+        <p class="text-footer">
+            www.startupsindh.com
+        </p>
+    </footer>
+
+    <script src="resp.js"></script>
+</body>
+</html>
